@@ -7,7 +7,7 @@ startButton.addEventListener("click", start);
 stopButton.addEventListener("click", stop);
 
 function printLoop() {
-    loop.innerHTML += "<br>Hi there<br>"
+    out.innerHTML += "<br>Hi there<br>"
 }
 
 function start() {
