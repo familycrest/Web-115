@@ -1,4 +1,4 @@
-let out = document.getElementById("loop");
+let out = document.getElementById("output");
 let interv;
 let startButton = document.getElementById("start");
 let stopButton = document.getElementById("stop");
