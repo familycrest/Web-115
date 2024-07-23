@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEB-115 Final Project</title>
+        <script src="projectJS.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div class="banner">
+            <img src="logo2.png" alt="Logo" class="logo">
+            <div class="banner-content">
+                <p>Student: Kenneth Stancil | Course: WEB-115 | Section: 0001</p>
+                <h1>Build Your Meal Plan</h1>
+            </div>
+        </div>
+
+        <!-- User's Personal Information -->
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="input-group">
+            <label for="goal">Goal for the Week:</label>
+            <textarea id="goal" rows="4"></textarea>
+        </div>
+
+        <button onclick="clearPlanner()">Clear Weekly Planner</button>
+        <button onclick="printMealPlan()">Print Meal Plan</button>
+        <button onclick="generateMealPlanPage()">Generate Meal Plan</button>
+
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Breakfast</th>
+                <th>Snack</th>
+                <th>Lunch</th>
+                <th>Snack</th>
+                <th>Dinner</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td><input type="text" id="mondayBreakfast"></td>
+                <td><input type="text" id="mondaySnack"></td>
+                <td><input type="text" id="mondayLunch"></td>
+                <td><input type="text" id="mondaySnack2"></td>
+                <td><input type="text" id="mondayDinner"></td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td><input type="text" id="tuesdayBreakfast"></td>
+                <td><input type="text" id="tuesdaySnack"></td>
+                <td><input type="text" id="tuesdayLunch"></td>
+                <td><input type="text" id="tuesdaySnack2"></td>
+                <td><input type="text" id="tuesdayDinner"></td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td><input type="text" id="wednesdayBreakfast"></td>
+                <td><input type="text" id="wednesdaySnack"></td>
+                <td><input type="text" id="wednesdayLunch"></td>
+                <td><input type="text" id="wednesdaySnack2"></td>
+                <td><input type="text" id="wednesdayDinner"></td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td><input type="text" id="thursdayBreakfast"></td>
+                <td><input type="text" id="thursdaySnack"></td>
+                <td><input type="text" id="thursdayLunch"></td>
+                <td><input type="text" id="thursdaySnack2"></td>
+                <td><input type="text" id="thursdayDinner"></td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td><input type="text" id="fridayBreakfast"></td>
+                <td><input type="text" id="fridaySnack"></td>
+                <td><input type="text" id="fridayLunch"></td>
+                <td><input type="text" id="fridaySnack2"></td>
+                <td><input type="text" id="fridayDinner"></td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td><input type="text" id="saturdayBreakfast"></td>
+                <td><input type="text" id="saturdaySnack"></td>
+                <td><input type="text" id="saturdayLunch"></td>
+                <td><input type="text" id="saturdaySnack2"></td>
+                <td><input type="text" id="saturdayDinner"></td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td><input type="text" id="sundayBreakfast"></td>
+                <td><input type="text" id="sundaySnack"></td>
+                <td><input type="text" id="sundayLunch"></td>
+                <td><input type="text" id="sundaySnack2"></td>
+                <td><input type="text" id="sundayDinner"></td>
+            </tr>
+        </table>
+
+        <div id="howTo">
+            <p>This page allows you to make your own meal plan. You can print your meal plan or you can generate as many meal plans as you want on a popup web page. Simply put in new
+                information and then press "Generate Meal Plan" to create a new meal plan as many times as you want. You don't have to change the information to make a new meal plan that way, either.
+                Simply put fill in as many of the fields as you want. To generate a meal plan on the popup or to print one you have to enter an email, but the rest of the information is optional.
+            </p>
+        </div>
+    </body>
+</html>
